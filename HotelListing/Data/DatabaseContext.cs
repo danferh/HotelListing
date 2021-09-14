@@ -34,6 +34,18 @@ namespace HotelListing.Data
                         Id = 3,
                         Name = "Cayman Island",
                         ShortName = "CI"
+                    },
+                    new Country
+                    {
+                        Id = 4,
+                        Name = "United States",
+                        ShortName = "US"
+                    },
+                    new Country
+                    {
+                        Id = 5,
+                        Name = "Nicaragua",
+                        ShortName = "NI"
                     }
                 );
 
@@ -61,8 +73,25 @@ namespace HotelListing.Data
                         Address = "Nassua",
                         CountryId = 2,
                         Rating = (decimal)4
+                    },
+                    new Hotel
+                    {
+                        Id = 4,
+                        Name = "Hilton",
+                        Address = "Managua",
+                        CountryId = 5,
+                        Rating = (decimal)4.3
+                    },
+                    new Hotel
+                    {
+                        Id = 5,
+                        Name = "Hilton",
+                        Address = "Miami",
+                        CountryId = 4,
+                        Rating = (decimal)4
                     }
                 );
+            base.OnModelCreating(builder);
         }       
     }
 }
