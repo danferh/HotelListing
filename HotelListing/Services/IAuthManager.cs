@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelListing.Services
 {
-    interface IAuthManager
+    public interface IAuthManager
     {
         Task<bool> ValidateUser(LoginUserDTO userDTO);
         Task<string> CreateToken();
